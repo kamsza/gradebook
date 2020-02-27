@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.1" fx:id="gradePane"
+            fx:controller="pl.edu.agh.jdziennik.controller.normalmode.GradePaneController">
+    <center>
+        <TableView fx:id="tableView">
+            <columns>
+                <TableColumn text="Lp" fx:id="lpColumn" minWidth="10.0" prefWidth="30.0" sortable="false"/>
+                <TableColumn maxWidth="5.0" prefWidth="5.0" sortable="false"/>
+                <TableColumn minWidth="300.0" prefWidth="200.0" text="uczeń">
+                    <columns>
+                        <TableColumn text="nazwisko" fx:id="surnameColumn" minWidth="150.0" prefWidth="100.0"/>
+                        <TableColumn text="imie" fx:id="nameColumn" minWidth="150.0" prefWidth="100.0"/>
+                    </columns>
+                </TableColumn>
+                <TableColumn prefWidth="50.0" sortable="false"/>
+                <TableColumn text="Oceny" fx:id="gradeColumn" minWidth="400.0" prefWidth="800.0" sortable="false"/>
+            </columns>
+        </TableView>
+    </center>
+    <right>
+        <VBox layoutX="480.0" prefHeight="400.0" prefWidth="145.0" spacing="10.0" alignment="CENTER">
+            <children>
+                <Region VBox.vgrow="ALWAYS"/>
+                <Button fx:id="addGradeButton" text="dodaj ocenę" onAction="#handleAddGradeAction" alignment="CENTER"
+                        contentDisplay="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="125.0"
+                        textAlignment="CENTER">
+                    <VBox.margin>
+                        <Insets bottom="10.0"/>
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </right>
+</BorderPane>

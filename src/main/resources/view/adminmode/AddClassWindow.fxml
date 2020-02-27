@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:id="rootBox"
+          fx:controller="pl.edu.agh.jdziennik.controller.adminmode.AddClassController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" prefWidth="10.0"/>
+        <ColumnConstraints hgrow="ALWAYS" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="ALWAYS" prefWidth="10.0"/>
+        <ColumnConstraints hgrow="ALWAYS" prefWidth="150.0"/>
+        <ColumnConstraints hgrow="ALWAYS" prefWidth="10.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="ALWAYS" prefHeight="10.0"/>
+        <RowConstraints vgrow="ALWAYS" prefHeight="40.0"/>
+        <RowConstraints vgrow="ALWAYS" prefHeight="40.0"/>
+        <RowConstraints vgrow="ALWAYS" prefHeight="40.0"/>
+        <RowConstraints vgrow="ALWAYS" prefHeight="10.0"/>
+    </rowConstraints>
+
+    <Label text="identyfikator:" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <font>
+            <Font name="System Italic" size="16.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="idField" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+
+    <Label text="wychowawca:" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <font>
+            <Font name="System Italic" size="16.0"/>
+        </font>
+    </Label>
+    <ComboBox fx:id="teacherComboBox" GridPane.columnIndex="3" GridPane.rowIndex="2" minWidth="150"/>
+
+    <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.columnSpan="3">
+        <Button text="Dodaj" fx:id="addButton" prefWidth="150.0" onAction="#handleAddAction"/>
+    </HBox>
+</GridPane>

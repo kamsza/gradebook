@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="taughtTab" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="pl.edu.agh.jdziennik.controller.normalmode.TaughtClassesTabController">
+    <left>
+        <TableView fx:id="tableView">
+            <columns>
+                <TableColumn text="Lp" fx:id="lpColumn" minWidth="10.0" prefWidth="30.0"/>
+                <TableColumn text="klasa" fx:id="classColumn" minWidth="150.0" prefWidth="100.0"/>
+                <TableColumn text="przedmiot" fx:id="subjectColumn" minWidth="150.0" prefWidth="100.0"/>
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+        </TableView>
+    </left>
+    <right>
+        <AnchorPane>
+            <fx:include fx:id="gradePane" source="GradePane.fxml" AnchorPane.topAnchor="20.0"
+                        AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.bottomAnchor="20.0"/>
+        </AnchorPane>
+    </right>
+</BorderPane>

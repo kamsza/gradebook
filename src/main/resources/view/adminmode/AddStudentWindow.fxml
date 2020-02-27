@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:id="rootBox"
+          fx:controller="pl.edu.agh.jdziennik.controller.adminmode.AddStudentController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" prefWidth="10.0"/>
+        <ColumnConstraints hgrow="ALWAYS" prefWidth="120.0"/>
+        <ColumnConstraints hgrow="ALWAYS" prefWidth="10.0"/>
+        <ColumnConstraints hgrow="ALWAYS" prefWidth="125.0"/>
+        <ColumnConstraints hgrow="ALWAYS" prefWidth="10.0"/>
+        <ColumnConstraints hgrow="ALWAYS" prefWidth="95.0"/>
+        <ColumnConstraints hgrow="ALWAYS" prefWidth="10.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="ALWAYS" prefHeight="10.0"/>
+        <RowConstraints vgrow="ALWAYS" prefHeight="40.0"/>
+        <RowConstraints vgrow="ALWAYS" prefHeight="40.0"/>
+        <RowConstraints vgrow="ALWAYS" prefHeight="40.0"/>
+        <RowConstraints vgrow="ALWAYS" prefHeight="40.0"/>
+        <RowConstraints vgrow="ALWAYS" prefHeight="40.0"/>
+        <RowConstraints vgrow="ALWAYS" prefHeight="40.0"/>
+        <RowConstraints vgrow="ALWAYS" prefHeight="10.0"/>
+    </rowConstraints>
+
+    <Label text="imię:" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <font>
+            <Font name="System Italic" size="16.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="nameField" GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.columnSpan="3"/>
+
+    <Label text="nazwisko:" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <font>
+            <Font name="System Italic" size="16.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="surnameField" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.columnSpan="3"/>
+
+    <Label text="PESEL:" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <font>
+            <Font name="System Italic" size="16.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="PESELField" GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.columnSpan="3"/>
+
+    <Label text="rodzic:" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <font>
+            <Font name="System Italic" size="16.0"/>
+        </font>
+    </Label>
+    <ComboBox fx:id="parentComboBox" GridPane.columnIndex="3" GridPane.rowIndex="4"/>
+    <Button text="nowy rodzic" fx:id="addParentButton" onAction="#handleAddParentAction" GridPane.columnIndex="5"
+            GridPane.rowIndex="4" minWidth="85" maxWidth="85"/>
+
+    <Label text="klasa:" GridPane.columnIndex="1" GridPane.rowIndex="5">
+        <font>
+            <Font name="System Italic" size="16.0"/>
+        </font>
+    </Label>
+    <ComboBox fx:id="classComboBox" GridPane.columnIndex="3" GridPane.rowIndex="5"/>
+    <Button text="nowa klasa" fx:id="addClassButton" onAction="#handleAddClassAction" GridPane.columnIndex="5"
+            GridPane.rowIndex="5" minWidth="85" maxWidth="85"/>
+
+    <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.columnSpan="5">
+        <Button text="Dodaj" fx:id="addButton" minWidth="120.0" maxWidth="120" onAction="#handleAddAction"/>
+    </HBox>
+</GridPane>

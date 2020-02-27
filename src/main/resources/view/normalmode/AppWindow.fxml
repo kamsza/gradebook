@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.stage.Screen?>
+<TabPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="800" prefWidth="1200" xmlns="http://javafx.com/javafx/8"
+         fx:controller="pl.edu.agh.jdziennik.controller.normalmode.AppWindowController">
+    <fx:define>
+        <Screen fx:factory="getPrimary" fx:id="screen"/>
+    </fx:define>
+    <tabs>
+        <Tab text="Aktualna lekcja" closable="false">
+            <content>
+                <AnchorPane>
+                    <fx:include fx:id="presentLessonTab" source="PresentLessonTab.fxml" AnchorPane.topAnchor="20.0"
+                                AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0"
+                                AnchorPane.bottomAnchor="20.0"/>
+                </AnchorPane>
+            </content>
+        </Tab>
+
+        <Tab text="Lista obecności" closable="false">
+            <content>
+                <AnchorPane>
+                    <fx:include fx:id="attendanceTab" source="AttendanceTab.fxml" AnchorPane.topAnchor="0.0"
+                                AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.bottomAnchor="0.0"/>
+                </AnchorPane>
+            </content>
+        </Tab>
+
+        <Tab text="Oceny" closable="false">
+            <content>
+                <AnchorPane>
+                    <fx:include fx:id="gradeTab" source="GradeTab.fxml" AnchorPane.topAnchor="20.0"
+                                AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0"
+                                AnchorPane.bottomAnchor="20.0"/>
+                </AnchorPane>
+            </content>
+        </Tab>
+
+        <!--
+        <Tab text="Twoje klasy" closable="false">
+            <content>
+                <AnchorPane>
+                    <fx:include fx:id="taughtClassesTab" source="TaughtClassesTab.fxml" AnchorPane.topAnchor="20.0"
+                                AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0"
+                                AnchorPane.bottomAnchor="20.0"/>
+                </AnchorPane>
+            </content>
+        </Tab>
+
+        <Tab text="Plan zajęć" closable="false"/>
+
+        <Tab text="Wydarzenia" closable="false"/>
+        -->
+    </tabs>
+</TabPane>
