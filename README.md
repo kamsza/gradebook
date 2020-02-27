@@ -10,40 +10,55 @@ Complete documentation is available at the [JavaDoc](https://kamsza.github.io/gr
 
 ### Example views
 ##### Starting panel
-![starting panel](https://github.com/kamsza/gradebook/blob/images/1.PNG)
+
 *starting panel*
+
+![starting panel](https://github.com/kamsza/gradebook/blob/images/1.PNG)
+
 
 
 ##### Teacher mode
 
+*present lesson tab*
+
 ![present lesson tab](https://github.com/kamsza/gradebook/blob/images/2.PNG)
+
 *present lesson tab*
 
 ![present lesson tab](https://github.com/kamsza/gradebook/blob/images/3.PNG)
-*present lesson tab*
 
-![attendance tab](https://github.com/kamsza/gradebook/blob/images/4.PNG)
 *attendance tab*
 
-![grade tab](https://github.com/kamsza/gradebook/blob/images/6.PNG)
+![attendance tab](https://github.com/kamsza/gradebook/blob/images/4.PNG)
+
 *grade tab*
 
-![adding grade window](https://github.com/kamsza/gradebook/blob/images/5.PNG)
+![grade tab](https://github.com/kamsza/gradebook/blob/images/6.PNG)
+
 *adding grade window*
 
-![adding multiple grades window](https://github.com/kamsza/gradebook/blob/images/7.PNG)
+![adding grade window](https://github.com/kamsza/gradebook/blob/images/5.PNG)
+
 *adding multiple grades window*
+
+![adding multiple grades window](https://github.com/kamsza/gradebook/blob/images/7.PNG)
+
 
 ##### Admin mode
 
-![students tab](https://github.com/kamsza/gradebook/blob/images/8.PNG)
 *students tab*
 
-![adding student window](https://github.com/kamsza/gradebook/blob/images/11.PNG)
+![students tab](https://github.com/kamsza/gradebook/blob/images/8.PNG)
+
 *adding student window*
 
-![classes tab](https://github.com/kamsza/gradebook/blob/images/9.PNG)
+![adding student window](https://github.com/kamsza/gradebook/blob/images/11.PNG)
+
 *classes tab*
 
-![teachers tab](https://github.com/kamsza/gradebook/blob/images/10.PNG)
+![classes tab](https://github.com/kamsza/gradebook/blob/images/9.PNG)
+
 *teachers tab*
+
+![teachers tab](https://github.com/kamsza/gradebook/blob/images/10.PNG)
+
