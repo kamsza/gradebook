@@ -1,0 +1,4 @@
+*.http linguist-detectable=false
+*.java linguist-detectable=true
+*.fxml linguist-detectable=true
+*.xml linguist-detectable=true
