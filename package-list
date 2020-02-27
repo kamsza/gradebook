@@ -1,0 +1,8 @@
+pl.edu.agh.jdziennik
+pl.edu.agh.jdziennik.controller
+pl.edu.agh.jdziennik.controller.adminmode
+pl.edu.agh.jdziennik.controller.normalmode
+pl.edu.agh.jdziennik.model
+pl.edu.agh.jdziennik.model.dbaccess
+pl.edu.agh.jdziennik.wrapper
+pl.edu.agh.jdziennik.wrapper.wrappingaccess
